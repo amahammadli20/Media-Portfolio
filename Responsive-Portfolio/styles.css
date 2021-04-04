@@ -1,0 +1,276 @@
+body{
+    position: relative;
+    background-color: #ececec;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.whole-div{
+    height: 1100px;
+}
+
+.head{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+}
+
+.header-left{
+    height: 80px;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: cadetblue;
+    box-sizing: border-box;
+}
+.header-left a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navigation-part{
+    text-align: center;
+    margin-top: 25px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 20px;
+    color:grey;
+}
+
+.second-link{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.main-div{
+    margin-top: 70px;
+    margin-top: 160px;
+
+}
+
+.left-section,
+.left-section-portfolio{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgb(187, 181, 181);
+    background-color: #fff;
+}
+
+
+.left-section h1,
+.left-section-portfolio h1{
+    font-size: 35px;
+    color: #4aaaa5;
+    margin: 30px 25px;
+}
+
+
+.left-section img{
+    width: 230px;
+    height: 230px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.right-section{
+    height: 250px;
+    text-align: center;
+    border: 1px solid rgb(187, 181, 181);
+    background-color: #fff;
+}
+
+.left-section p {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin: 15px;
+    margin-left: 5px;
+}
+
+.right-section h2{
+    color: #4aaaa5;
+    margin: 20px;
+    font-size: 25px;
+}
+
+
+.contact_imgs{
+    margin-top: 30px;
+}
+
+.contact_imgs img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #666666;
+    position: absolute;
+    bottom: 0;
+    border-top: 5px solid #4aaaa5;
+}
+
+footer p{
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    padding-top: 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.form_section{
+    height: 500px;
+}
+
+.form_section label{
+    font-size: 20px;
+    color: whitesmoke;
+    display: block;
+}
+
+.form_section li{
+    margin-left: 15px;
+    margin-top: 30px;
+    width: 650px;
+    height: 60px;
+    color: rgb(105, 100, 100);
+}
+
+.form_section label{
+    margin-bottom: 15px;
+    color: rgb(105, 100, 100);
+}
+
+.form_section input{
+    width: 660px;
+    height: 30px;
+    border: 1px solid rgb(187, 181, 181);
+    padding-left: 10px;
+}
+
+#message{
+    border: 1px solid rgb(187, 181, 181);
+}
+
+#submit_button{
+    margin-top: 150px;
+    margin-left: 15px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #4aaaa5;
+    color: whitesmoke;
+    border: none;
+}
+
+.portfolio-gallery img{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+}
+
+.portfolio-gallery{
+    margin: 30px;
+}
+
+.contact_imgs img:hover{
+    border: 1px solid rgb(0, 162, 255);
+}
+
+.head{
+    background-color: #fff; 
+}
+@media screen and (min-width: 980px) {
+    .head{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 3px solid #b2b6b6;
+    }
+
+    .header-left{
+        width: 300px; 
+    }
+
+    .navigation-part{
+        width: 300px;
+    }
+
+    .main-div{
+        height: 100vh;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .left-section{
+        width: 700px;
+        height: 600px;
+    }
+
+    .left-section-portfolio{
+        height: 820px;
+        width: 730px;
+    }
+
+    .left-section hr,
+    .left-section-portfolio hr{
+        width: 670px;
+    }
+
+    .right-section{
+        width: 300px;
+    }
+    .right-section hr{
+        width: 270px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .header-left{
+        width: 100%;
+    }
+
+    .navigation-part{
+        width: 100%;
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    .left-section hr,
+    .right-section hr{
+        width: 95%;
+    }
+
+    .right-section{
+        width: 100%;
+    }
+
+    .whole-div{
+        min-height: 1700px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .left-section img{
+        width: 520px;
+        height: 520px;
+    }
+
+    .whole-div{
+        min-height: 1700px;
+    }
+}
